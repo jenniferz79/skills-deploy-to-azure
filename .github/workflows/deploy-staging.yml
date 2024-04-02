@@ -27,7 +27,7 @@ jobs:
       - name: npm install and build webpack
         run: |
           npm install
-          npm run build
+          npm run build --legacy-peer-deps
       - uses: actions/upload-artifact@v4
         with:
           name: webpack artifacts
